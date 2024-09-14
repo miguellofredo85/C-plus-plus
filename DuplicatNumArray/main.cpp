@@ -2,39 +2,41 @@
 #include <string>
 
 
+
+
 int main(){
 
-    //Print data
+int numbers[] {1,2,4,5,1,8,2,3,6,1,4,2};
+ unsigned int collection_size{12};
+ 
 
-    // std::cout<<"Ola"<<std::endl;
+ for(int i{0} ; i < collection_size; i++){
 
-    // int age{20};
-    // std::cout<<"Age is :"<< age<<std::endl;
+           for(int j = i+1; j < collection_size; j++){
 
-    // std::cerr<<"Error message"<<std::endl;
-    // std::clog<<"log message"<<std::endl;
+            if(numbers[j] == numbers[i]){
+                for(int k = j; k < collection_size; k++){
+                    numbers[k] = numbers[k+1];
+                }
+                collection_size--;
+                j--;
+            }
+           }
+        }
 
-    // int idade;
-    // std::string name;
+    std::cout << "The collection contains " << collection_size << " unique numbers, they are ";
 
-    std::cout<<"Enter name and age"<<std::endl;
-
-    //std::cin>>name;
-    //std::cin>>idade;
-
-    // std::cin>>name>>idade;
-
-    // std::cout<<"Ola " << name << " tu edad es " << idade << std::endl;
-
-    //Data with spaces
-
-    std::string full_name;
-    int age3;
-
-    std::getline(std::cin,full_name);
-    std::cin>>age3;
-
-    std::cout << "Ola " << full_name << " tu edad es " << age3 << std::endl;
+        for(int i ; i < collection_size; i++){
+            std::cout << numbers[i];
+            if(i != collection_size-1){
+                std::cout << " ";
+        }else{
+            std::cout <<"";
+        }
+        }
 
     return 0;
-}
+    }
+
+
+   
