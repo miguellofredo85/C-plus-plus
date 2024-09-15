@@ -15,7 +15,6 @@ int main(){
     {
       if(array_1[i] == array_2[j]){
         new_data[count++] = array_1[i];
-        break;
       }
     }
     
