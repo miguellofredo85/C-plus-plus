@@ -4,8 +4,12 @@ using namespace std;
 
 int main(){
 
-  int array_1[] {1,2,4,5,9,3,6,7,44,55}; 
+  int array_1[] {1,2,4,5,9,3,6,7,44,55}; //common nums
   int array_2[] {11,2,44,45,49,43,46,47,55,88};
+
+  
+  // int array_1[] {1,2,4,5,9,3,6,7,44,55}; diferents array
+  // int array_2[] {11123,123,989,56456,49,43,46,47,23244,88};
   unsigned int count{};
   int new_data[10];
 
