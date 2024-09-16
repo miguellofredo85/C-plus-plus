@@ -33,5 +33,24 @@ int main(){
         "you drinking wine"
     };
 
+
+    //pointer que pode mudar o valor de uma var que nao seja const
+
+    int* point_change{nullptr};
+    int var4{2353};
+    point_change = &var4;
+
+    *point_change = 4; // muda o valor de var4
+    cout << var4 << endl;
+
+    var4 =  45345;
+
+    cout << *point_change << endl; // o valor do pointer sera mudado
+
+    int num{67876};
+    point_change = &num; // valor do pointer muda pois e assinada outra var
+
+    cout << *point_change << endl;
+
     return 0;
 }
