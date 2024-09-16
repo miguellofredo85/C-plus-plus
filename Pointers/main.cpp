@@ -17,5 +17,21 @@ int main(){
    cout << point3 << endl; // hello world enteiro
    cout << *point3 << endl; // primeira letra da string por e um array
 
+
+    char* predictions [] { //colocando o pointer nao preciso colocar a quantidade permitida de caracteres
+        "a lot of kinds running in the backyard!",
+        "a lot of empty beer bootles on your work table.",
+        "you Partying too much with kids wearing weird clothes.",
+        "you running away from something really scary",
+        "clouds gathering in the sky and an army standing ready for war",
+        "dogs running around in a deserted empty city",
+        "a lot of cars stuck in a terrible traffic jam",
+        "you sitting in the dark typing lots of lines of code on your dirty computer",
+        "you yelling at your boss. And oh no! You get fired!",
+        "you laughing your lungs out. I've never seen this before.",
+        ", huum, I don't see anything",
+        "you drinking wine"
+    };
+
     return 0;
 }
