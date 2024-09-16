@@ -52,5 +52,23 @@ int main(){
 
     cout << *point_change << endl;
 
+
+    int num2{6456};
+    const int* point4{&num2}; // const do pointer nao tem a ver com a var, ela nao sera const
+
+    int num3{9789};
+    point4 = &num3; // pero sim pode mudar de var apontada
+
+    cout << *point4 << endl;
+
+// posso ter um pointer const e uma var nao const, os dois const,  mas nao var const e pointer nao const
+
+int num4{534};
+int* point5{&num4};
+const int* point6{&num4}; // pointer to const var
+const int* const point7(&num4); // pointer const to const var
+int* const point8{&var4}; // point const to nao const var
+
+
     return 0;
 }
