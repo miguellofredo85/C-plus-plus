@@ -65,10 +65,12 @@ int main(){
 
 int num4{534};
 int* point5{&num4};
-const int* point6{&num4}; // pointer to const var
+const int* point6{&num4}; // pointer to const var, mas a var nao precisa ser delcarada como const, so fala que nao e possivel mudar esse valor do var, entao o valor da var so pode ser mudado declarando outro valor na var
 const int* const point7(&num4); // pointer const to const var
 int* const point8{&var4}; // point const to nao const var
 
+
+//se tiver const var um pointer nao pode apontar a essa ver pois quere dizer que estou tentando modificar o valor da var, e dara erro de compilacao ex. const int var{55}; int* point{&var}
 
     return 0;
 }
