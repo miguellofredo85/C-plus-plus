@@ -18,7 +18,7 @@ int main(){
    cout << *point3 << endl; // primeira letra da string por e um array
 
 
-    char* predictions [] { //colocando o pointer nao preciso colocar a quantidade permitida de caracteres
+    const char* predictions [] { //colocando o pointer nao preciso colocar a quantidade permitida de caracteres
         "a lot of kinds running in the backyard!",
         "a lot of empty beer bootles on your work table.",
         "you Partying too much with kids wearing weird clothes.",
