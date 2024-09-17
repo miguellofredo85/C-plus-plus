@@ -41,6 +41,12 @@ for (size_t i = 0; i < size(arr1); i++)
     {
         cout << arr1[i] << " ";
     }
+     cout << "--------------" << endl;
+
+for (size_t i{size(arr1)}; i > 0; i--)
+{
+    cout << *(arr1 + i -1) << " "; //arr1 aponta pra o primer nro, entao 0 - 1 apontara pra o ultimo e assim decresendo
+}
 
     return 0;
 }
