@@ -8,7 +8,7 @@ int main(){
     int * min_address;
     int min_alt{*(data)};
 
-    cout << *(data + 1) << endl;
+    cout << *(data + 0) << endl;
     cout << min_alt << endl;
 
     for (size_t i = 0; i < size; i++)
