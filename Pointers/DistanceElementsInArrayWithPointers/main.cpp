@@ -21,6 +21,6 @@ int main(){
 
     cout << positive_pointer << endl;
     cout << negative_pointer << endl;
-    cout <<" size of ptrdiff_t " << sizeof(ptrdiff_t)<< endl;
+    cout <<" size of ptrdiff_t " << sizeof(ptrdiff_t)<< endl;// 8 bytes entao pode guardar numeros longos
     return 0;
 }
