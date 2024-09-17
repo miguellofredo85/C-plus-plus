@@ -48,5 +48,16 @@ for (size_t i{size(arr1)}; i > 0; i--)
     cout << *(arr1 + i -1) << " "; //arr1 aponta pra o primer nro, entao 0 - 1 apontara pra o ultimo e assim decresendo
 }
 
+     cout << "--------------" << endl;
+
+
+point = arr1 + (size(arr1) -1); // apontando ao ultimo valor do arr1
+
+for (size_t i{size(arr1)}; i > 0; i--)
+{
+    cout << *(point--) << " "; // decrecendo 
+}
+
+
     return 0;
 }
