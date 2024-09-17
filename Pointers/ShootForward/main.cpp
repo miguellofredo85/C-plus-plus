@@ -3,35 +3,13 @@ using namespace std;
 
 int main(){
 
-    int data[]{181,82,22,53,19,1,51,217,12,11};
-    unsigned int size{10};
-    int * max_address;
-    int max_num;
+    int data[] {1,3,6,3,9,3,5,7,2,11};
+    unsigned int offset{6};
 
-    for (size_t i = 0; i < size; i++){
+    int* point{data};
 
-        if(data[i] > data[i+1]){
-                max_num = data[i];
-        }
+    cout << "The element " << offset <<" slots away from the beginning is : " << *(point+offset);
 
-        for (size_t j = 1; j < size; j++)
-        {
-            if(data[j] > max_num){
-                max_num = data[j];
-
-            max_address = &data[j];
-
-        
-        }
-        
-        }
-        
-
-    }
-    
-    cout << max_address << endl;
-
-    cout << *max_address;
 
     return 0;
 }
