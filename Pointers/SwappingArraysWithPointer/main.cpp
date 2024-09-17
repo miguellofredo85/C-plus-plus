@@ -32,13 +32,13 @@ int main(){
 
     for (size_t i = 0; i < size(arr1); i++)
     {
-        cout << p_arr1[i] << " ";
+        cout << *(p_arr1 + i) << " ";
     }
     cout << endl;
     
     for (size_t i = 0; i < size(arr2); i++)
     {
-        cout << p_arr2[i] << " ";
+        cout << *(p_arr2 + i) << " ";
     }
     
     
