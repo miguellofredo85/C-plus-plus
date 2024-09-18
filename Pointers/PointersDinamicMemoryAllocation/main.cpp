@@ -32,11 +32,13 @@ point2 = &num2;
     int* point3{new int{82}};
     int* point4{point3};
 
-    cout << *point4 << endl;
+    cout << point3 << endl; //0x26bfec5f040
+    cout << point4 << endl; //0x26bfec5f040
+    cout << *point4 << endl; // 82
 
     delete point3;
     // *point3 = 3; "estao tentando escrever a var point3!!"
-    point3 = nullptr // correta pratica
+    point3 = nullptr; // correta pratica
 
     if(!(point3 == nullptr)){
         cout << "estao tentando escrever a var point3!!";
