@@ -35,7 +35,8 @@ point2 = &num2;
     cout << *point4 << endl;
 
     delete point3;
-    point3 = nullptr;
+    // *point3 = 3; "estao tentando escrever a var point3!!"
+    point3 = nullptr // correta pratica
 
     if(!(point3 == nullptr)){
         cout << "estao tentando escrever a var point3!!";
