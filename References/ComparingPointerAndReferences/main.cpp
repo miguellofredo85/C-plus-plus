@@ -69,6 +69,12 @@ int main(){
     std::cout << "&ref_double_value : " << &ref_double_value << std::endl;
 	std::cout << "p_double_value : " << p_double_value << std::endl;
 	std::cout << "*p_double_value : " << *p_double_value << std::endl;
+
+    const int age0{30};
+    // const int& age1{age0};
+    int& age1{age0};
+
+    std::cout << ++age1; //cant change a const ref
    
     return 0;
 }
