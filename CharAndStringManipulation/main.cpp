@@ -21,13 +21,21 @@ int main(){
    }
 
 int blank{};
-   for (size_t i = 0; i < size(original_str); i++)
+  //  for (size_t i = 0; i < size(original_str); i++)
+  //  {
+  //   if(isblank(original_str[i])){
+  //     blank += 1;
+  //   }
+  //  }
+   
+  for (auto i : original_str)
    {
-    if(isblank(original_str[i])){
+    if(isblank(i)){
       blank += 1;
     }
    }
-   
+
+
   cout << original_str << '\n';
   cout << dest_str << '\n';  
 
