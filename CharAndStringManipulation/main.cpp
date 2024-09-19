@@ -19,10 +19,18 @@ int main(){
    {
     dest_str[i] = toupper(original_str[i]); // tolower pra fazer o contrario
    }
+
+int blank{};
+   for (size_t i = 0; i < size(original_str); i++)
+   {
+    if(isblank(original_str[i])){
+      blank += 1;
+    }
+   }
    
   cout << original_str << '\n';
   cout << dest_str << '\n';  
 
-
+cout << "we found " << blank << " empty spaces" << '\n';
 return 0;
 }
