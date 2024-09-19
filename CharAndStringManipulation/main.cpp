@@ -1,27 +1,28 @@
 #include <iostream>
-#include <cmath>
+#include <cctype>
+using namespace std;
 
+// https://en.cppreference.com/w/cpp/header/cctype
 
 int main(){
- double length{};
- double height{};
- double width{};
 
- 
+   cout << "isalnum: ";
+   boolalpha;
 
- std::cout << "Welcome to box calculator. Enter length, height and width\n";
- std::cout << "Length: ";
- std::cin >> length;
- std::cout << "Height: ";
- std::cin >> height;
- std::cout << "Width: ";
- std::cin >> width;
+   cout << "C is alphanumeric? : "  << isalnum('C') << '\n';
+   cout << "^ is alphanumeric? : "  << isalnum('^') << '\n';
 
- double base_area = width * length;
- double volume = base_area * height;
+   char original_str[]{"Hi my name is Miguel"};
+   char dest_str[(size(original_str))];
 
- std::cout << "The base area is : " << base_area << std::endl;
- std::cout << "The volume is : " << volume << std::endl;
+   for (size_t i = 0; i < size(original_str); i++)
+   {
+    dest_str[i] = toupper(original_str[i]); // tolower pra fazer o contrario
+   }
+   
+  cout << original_str << '\n';
+  cout << dest_str << '\n';  
+
 
 return 0;
 }
