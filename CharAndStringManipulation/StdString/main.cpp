@@ -18,6 +18,29 @@ int main(){
    cout << saying_hello << endl;
 
 
+   //concatenation
+
+   cout << planet + message << endl;
+
+   string var{string{"Hello"s + " World"}};
+
+   cout << var << endl;
+
+
+   string a{"Hello"};
+   string c{" World"};
+
+   cout << a.append(c)<< endl;
+   a = "Hello ";
+   cout << a.append(4,'?')<< endl;
+   cout << a.append(c, 4,1)<< endl;
+
+
+    // num concat
+   int e = 67;
+   string w{"Ola "};
+
+   cout << w + to_string(e) << endl;
 
 return 0;
 }    
