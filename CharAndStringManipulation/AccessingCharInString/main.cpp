@@ -33,7 +33,21 @@ char& var2 = message.back();
 var1 = 'H'; // modifying through references that arent const
 var2 = 'S';
 
-cout << message;
+cout << message << endl;
+
+
+string line{"this is another phrase"};
+
+const char* point = line.c_str(); // this methos will make my var line const, so cant be changed
+
+// point[0] = 'E'; //assignment of read-only location '* point'
+
+
+
+
+cout << line;
+
+
 
 return 0;
 }
