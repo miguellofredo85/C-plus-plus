@@ -70,7 +70,7 @@ cout << um.capacity() << endl;
 um.reserve(100);
 cout << um.capacity() << endl;
 
-um.shrink_to_fit(); // fit the capacity / size to the total of chars in the string
+um.shrink_to_fit(); // fit the capacity to the total of chars in the string
 cout << um.capacity() << endl;
 
 
