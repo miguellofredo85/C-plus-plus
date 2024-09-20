@@ -74,6 +74,16 @@ um.shrink_to_fit(); // fit the capacity to the total of chars in the string
 cout << um.capacity() << endl;
 
 
+um.insert(2,2,'6'); // positio, quantity, char. it has variant
+cout << um << endl;
+
+um.clear();
+cout << um << endl;
+
+
+// see also push, pop, erase
+
+
 
 return 0;
 }
