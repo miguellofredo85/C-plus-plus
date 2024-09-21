@@ -1,5 +1,6 @@
 #include <iostream>
 #include "compare.h"
+#include "mult.h"
 using namespace std;
 
 
