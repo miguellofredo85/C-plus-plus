@@ -34,7 +34,7 @@ void show_odds( unsigned int long long num){
 int main(){
 
 
-fun(98723713);
+show_odds(98723713);
 
   
 return 0;
