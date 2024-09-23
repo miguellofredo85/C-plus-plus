@@ -13,7 +13,7 @@ int contains_character( const char* str , unsigned int size , char c){
     }
 
   }
-
+  
   return -1;
 
 };
