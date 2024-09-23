@@ -8,6 +8,8 @@ consteval int multi(int multiplier){ // evalua q a function seja evaluada at com
     }
 
 int main(){
+    // int num{5};
+    // int num1 = multi(num); se no parameter coloco uma var que seja nao const dara erro por ela no comeco e evaluada como runtime
 
     int num1 = multi(4); // evaluada at comp time
 
