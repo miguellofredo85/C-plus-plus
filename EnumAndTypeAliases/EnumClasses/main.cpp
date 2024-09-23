@@ -53,10 +53,8 @@ int main(){
   // cout << static_cast<int>(month); // must cast
 
 
-//Your code will go above this line
-//Don't modify anything below this line
+
 DayOfWeek day{DayOfWeek::Friday};
-//Function declaration
 print_day(day);
 
 return 0;
