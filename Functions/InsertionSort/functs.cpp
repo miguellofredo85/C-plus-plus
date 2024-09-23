@@ -12,6 +12,8 @@ void insertion_sort(int * array, unsigned int size){
     	}
     	array[j+1] = key;
 	}
+
+ 
 }
 
 
