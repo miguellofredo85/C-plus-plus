@@ -1,23 +1,23 @@
 #include <iostream>
 #include <string>
 
-void max_str(const std::string& input1, const std::string input2,
-			std::string& output)
-{
-	if(input1 > input2){
-		output = input1;
-	}else{
-		output = input2;
-	}
-}
+// void max_str(const std::string& input1, const std::string input2,
+// 			std::string& output)
+// {
+// 	if(input1 > input2){
+// 		output = input1;
+// 	}else{
+// 		output = input2;
+// 	}
+// }
 
-void max_int( int input1, int input2,int& output){
-	if(input1 > input2){
-		output = input1;
-	}else{
-		output = input2;
-	}
-}
+// void max_int( int input1, int input2,int& output){
+// 	if(input1 > input2){
+// 		output = input1;
+// 	}else{
+// 		output = input2;
+// 	}
+// }
 
 void max_double( double input1, double input2,double* output){
 	if(input1 > input2){
@@ -26,6 +26,7 @@ void max_double( double input1, double input2,double* output){
 		*output = input2;
 	}
 }
+
 
 
 int main(){
@@ -52,6 +53,7 @@ int main(){
    double in_double2{76.9};
    max_double(in_double1,in_double2,&out_double);
    std::cout << "max_double : " << out_double << std::endl;
+
    
     return 0;
 }
