@@ -4,15 +4,24 @@ using std::endl;
 
 
 // template<typename T> T maximum( T a, T c); // all of same type
-
-template<typename T> T hunt_down( T a, T c[], T d);
-
+template<typename T>
+ int hunt_down( const T& a, const T* c, size_t d){
+    
+    for (int i = 0; i < d; i++) {
+        if(c[i] ==  a){
+            cout << i;
+            return i;
+        }
+    }
+    cout << -1;
+    return -1;
+}
 
 
 int main(){
 
 const std::string students[] {"Steve","Karly","Sally","Salim"} ;
-std::string to_find{"Steve"};
+std::string to_find{"Sally"};
 hunt_down(to_find,students,4);
 
 // int r{25}, y{765};
@@ -36,13 +45,3 @@ return 0;
   
 // }
 
-template<typename T>
- int hunt_down( const T& a, const T* c, size_t d){
-    
-    for (int i = 0; i < d; i++) {
-        if(c[i] ==  a){
-            return i;
-        }
-    }
-    return -1;
-}
