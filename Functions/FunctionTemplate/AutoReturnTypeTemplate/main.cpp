@@ -9,7 +9,7 @@ int main(){
 
     //Largest type is going to be deduced as return type
 
-	auto max1 = maximum ('e', 33); // double return type deduced
+	auto max1 = maximum('b', 90); // double return type deduced
     std::cout << "max1 : " << max1 << std::endl;
     std::cout << "size of max1 : " << sizeof(max1) << std::endl;
    
