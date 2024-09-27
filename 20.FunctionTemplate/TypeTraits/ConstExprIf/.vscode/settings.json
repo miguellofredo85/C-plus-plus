@@ -48,10 +48,6 @@
     "xmemory": "cpp",
     "xstring": "cpp",
     "xtr1common": "cpp",
-    "xutility": "cpp",
-    "string": "cpp",
-    "iomanip": "cpp",
-    "bitset": "cpp",
-    "sstream": "cpp"
+    "xutility": "cpp"
   }
 }
