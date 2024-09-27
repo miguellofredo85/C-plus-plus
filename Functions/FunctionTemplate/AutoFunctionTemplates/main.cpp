@@ -24,3 +24,7 @@ int main(){
    
     return 0;
 }
+
+auto func_add (auto a , auto b){
+    return a + b;
+}
