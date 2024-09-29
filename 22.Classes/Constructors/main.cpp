@@ -30,7 +30,8 @@ class Box {
 
 	public : 
 	//methods
-	
+	// Box = default;
+
 	Box(double width, double length, double height){
 	    
 	 m_width = width;
