@@ -26,7 +26,7 @@ Dog::~Dog(){
 }
 
 void some_func(){
-    Dog* p_dog = new Dog("Fluffy","Shepherd",2);
+    Dog* p_dog = new Dog("Fluffy","Shepherd",2); // created in heap, pointer though p_dog
 
     delete p_dog;// Causes for the destructor of Dog to be called
 }
@@ -34,6 +34,10 @@ void some_func(){
 
 
 int main(){ 
+
+//this one will create a copy, if erase all inside some_func and to ovject will pointer to de same address in p_age and that would ve a disaster, and delete will ve call twice
+// Dog dog("Valente", "Caramelo", 5); 
+//some_fun(dog)
 
     some_func();
     
