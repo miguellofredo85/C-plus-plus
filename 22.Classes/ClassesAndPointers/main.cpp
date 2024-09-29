@@ -16,7 +16,7 @@ int main(){
 
     Cylinder* p_cylinder = &cylinder1;
 
-        std::cout << "original volume p_cylinder: " << p_cylinder->volume() << std::endl;
+        std::cout << "original volume p_cylinder: " << p_cylinder->volume() << std::endl; // other syntax (*p_cylinder).volume()
 
 
     p_cylinder->set_base_radius(20); // changing through pointers
