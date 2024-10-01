@@ -21,7 +21,7 @@ Point::Point( Point&& source_point)
 	: x(source_point.steal_x()),
 		y(source_point.steal_y())
 {
-    //source_point.invalidate();
+    //source_point.invalidate(); this is the other way, calling above for source_point getters and erasing steal_x and y from point.h, two ways are valids
 	std::cout << "Body of move constructor" << std::endl;
 }
 
