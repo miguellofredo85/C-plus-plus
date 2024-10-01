@@ -15,8 +15,8 @@ int main(){
     std::cout << std::boolalpha;
     std::cout << "s1 > s2 : " << compare(s1,s2) << std::endl; // false
 
-    //Implicit conversions
-    std::cout << "s1 > 45.9 : " << compare(s1,45.9) << std::endl; // false
+    //Implicit conversions if const doesnt have explicit
+    //std::cout << "s1 > 45.9 : " << compare(s1,45.9) << std::endl; // false
 
 
    
