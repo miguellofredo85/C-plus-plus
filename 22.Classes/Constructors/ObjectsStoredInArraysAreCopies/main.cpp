@@ -14,12 +14,12 @@ int main(){
     std::cout << "----" << std::endl;
 
     Person students[] {p1,p2,p3};
-    for(size_t i{}; i < std::size(students); ++i){
+    for(size_t i{}; i < std::size(students); ++i){ 
         students[i].print_info();
     }
 
     std::cout << "----" << std::endl;
-    for(Person& p : students){
+    for(Person& p : students){   // take off the & and see diferent addresses that are copies
         p.print_info();
     }
 
