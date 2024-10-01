@@ -13,7 +13,9 @@ int main(){
 
     std::cout << "----" << std::endl;
 
-    Person students[] {p1,p2,p3};
+
+    // Person students[] {p1,p2,Person("Miguel", "Josefo", 45)}; this one will print p1 and p2 cause are copies, the last one is consider as the build in class and wont consider print
+    Person students[] {p1,p2,p3}; 
     for(size_t i{}; i < std::size(students); ++i){ 
         students[i].print_info();
     }
