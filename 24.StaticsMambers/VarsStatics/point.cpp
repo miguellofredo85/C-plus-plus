@@ -3,7 +3,7 @@
 
   Point::Point(double x, double y) : m_x{x},m_y{y}{
     std::cout << "Point constructor called" << std::endl;
-    ++m_point_count;
+    // ++m_point_count;
   }
 
     // Point Constructor

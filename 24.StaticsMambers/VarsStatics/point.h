@@ -25,7 +25,7 @@ public:
 private:
   double m_x;
   double m_y;
-  static size_t m_point_count;
+  static size_t m_point_count; // can be defined here as const but alter can not be changed, as later it will increment and decrement will be defined in other_file.cpp  
    
 };
 #endif // POINT_H
