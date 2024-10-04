@@ -1,6 +1,5 @@
 #ifndef CYLINDER_H
 #define CYLINDER_H
-
 namespace Geom
 {
 
@@ -11,13 +10,13 @@ namespace Geom
     ~Cylinder();
 
     double volume()const {
-      return PI * p_rad * p_rad * p_heigth
+      return PI * p_rad * p_rad * p_heigth;
     }
 
   private:
     inline static const double PI{3.141592};
     double p_rad;
-    double p_heigth
+    double p_heigth;
 
   };
 
