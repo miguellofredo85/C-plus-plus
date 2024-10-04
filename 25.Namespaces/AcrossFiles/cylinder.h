@@ -1,5 +1,6 @@
 #ifndef CYLINDER_H
 #define CYLINDER_H
+#include <iostream>
 namespace Geom
 {
 
@@ -7,10 +8,9 @@ namespace Geom
   {
   public:
     Cylinder(double rad, double heigth);
-    ~Cylinder();
 
-    double volume()const {
-      return PI * p_rad * p_rad * p_heigth;
+    void volume()const {
+      std::cout << PI * p_rad * p_rad * p_heigth;
     }
 
   private:
