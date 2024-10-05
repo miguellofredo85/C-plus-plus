@@ -17,6 +17,7 @@ int main(){
 	print_distance();
 
     std::cout << "----" << std::endl;
-    some_other_function();
+    some_other_function(); // erros linkage caused namespace anonymous
+		
     return 0;
 }
